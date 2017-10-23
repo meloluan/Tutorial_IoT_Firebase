@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database-deprecated';
 
 @Component({
   selector: 'app-input-output',
@@ -8,13 +9,16 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class InputOutputComponent implements OnInit {
 
+  public statusLED_write: FirebaseListObservable<any>;
   statusLED = 'apagado.';
   constructor(public db: AngularFireDatabase) { }
 
   ngOnInit() {
-    this.verificaLED();
+   // this.verificaLED();
   }
-
+  onClickBotao() {
+  //  this.statusLED_write.push(true);
+  }
     verificaLED() {
        this.db.database.ref('LED').on('child_changed', (child) => {
          console.log(child.val());
