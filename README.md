@@ -8,5 +8,7 @@ $ cd Tutorial_IoT_Firebase
 
 $ npm install
 
+$ firebase login
+
 $ npm start
 

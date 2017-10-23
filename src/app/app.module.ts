@@ -14,12 +14,12 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 
  export const firebaseConfig = {
-    apiKey: 'AIzaSyAWoskjC51bLkmIecNSFRHNZ0Kdxp5gjCQ',
-    authDomain: 'iot-esp8266-3f6bf.firebaseapp.com',
-    databaseURL: 'https://iot-esp8266-3f6bf.firebaseio.com',
-    projectId: 'iot-esp8266-3f6bf',
+    apiKey: '************************************',
+    authDomain: '**********.firebaseapp.com',
+    databaseURL: 'https://***********.firebaseio.com',
+    projectId: '*************',
     storageBucket: '',
-    messagingSenderId: '826418050043'
+    messagingSenderId: '***************'
   };
 
 @NgModule({
