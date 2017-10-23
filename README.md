@@ -8,7 +8,6 @@ $ cd Tutorial_IoT_Firebase
 
 $ npm install
 
-$ firebase login
-
 $ npm start
 
+Em seguida, acessar http://localhost:4200
