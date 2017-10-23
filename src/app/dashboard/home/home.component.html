@@ -1,0 +1,50 @@
+<div class="container-fluid">
+
+	<!-- Page Heading -->
+	<div class="row">
+		<div class="col-lg-12">
+			<ol class="breadcrumb">
+				<li><i class="fa fa-dashboard"></i> <a
+					href="Javascript:void(0)" routerLink="/dashboard/home">Dashboard</a>
+				</li>
+				<li class="active"><i class="fa fa-fw fa-bar-chart-o"></i>Início</li>
+			</ol>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<h1>IoT + Firebase</h1>
+		<p>A partir dessa página você terá os dados retidos no Firebase, estes recebidos pelos nodos da rede de coletores de dados com ESP8266</p>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 text-xs-center">
+			<div class="card card-default">
+				<div class="card-block">
+					<h2>Último valor (ADC counts)</h2>
+					<h1>{{ultimoDado}}</h1>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 text-xs-center">
+			<div class="card card-default">
+				<div class="card-block">
+					<h2>Média (ADC counts)</h2>
+					<h1>{{media}}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-content">
+	<div class="card card-block"><div class="row">
+    <div style="display: block;">
+    <canvas baseChart width="300" height="100"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"></canvas>
+    </div>
+  </div>
+	
+	</div>
+</div>
